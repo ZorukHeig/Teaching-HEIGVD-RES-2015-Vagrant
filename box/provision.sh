@@ -67,3 +67,7 @@ sudo apt-get install maven -y
 # mvn clean install
 # /opt/glassfish4.1/glassfish/bin/asadmin --user admin --passwordfile /tmp/password.txt deploy target/*.war
 
+# Install Docker
+echo "************************  install docker  ************************"
+wget -qO- https://get.docker.com/ | sh
+sudo usermod -aG docker vagrant
